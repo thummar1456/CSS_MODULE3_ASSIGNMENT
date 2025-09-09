@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .column {
+      flex: 1;
+      background-color: #f0f0f0;
+      padding: 1.5rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 1rem;
+      }
+
+      .column {
+        padding: 1rem;
+        font-size: 1rem;
+      }
+
+      nav, footer {
+        padding: 0.75rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>Navigation Bar</nav>
+  <div class="container">
+    <div class="column">Column 1 Content</div>
+    <div class="column">Column 2 Content</div>
+  </div>
+  <footer>Footer Section</footer>
+</body>
+</html>
